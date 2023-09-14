@@ -1,0 +1,327 @@
+/* styles.css */
+@font-face {
+    font-family: 'Lora';
+    src: url('Lora/Lora-VariableFont_wght.ttf') format('woff2'); /* Replace with your font file path */
+    /* Other font-related properties can be added here */
+}
+
+body {
+    font-family: 'Lora', serif; /* Use the Lora font with a fallback to generic serif fonts */
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.logo h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+header {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 5px 0;
+    line-height: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 80px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Hero section */
+/* CSS for the .hero section */
+
+.hero {
+    text-align: center;
+    padding: 290px; /* Adjust the padding as needed for spacing */
+    background-color: rgba(0, 0, 0, 0.7); /* Background color with reduced transparency (0.7 is 70% opaque) */
+    background-image: url('src_images/homeimage.jpg'); /* Background image URL */
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    color: #fff; /* Text color */
+    opacity: 80%;
+}
+
+/* Styles for the h1 text within the .hero section */
+.hero h1 {
+    font-size: 50px; /* Font size for the h1 text */
+    margin-bottom: 20px; /* Margin below the h1 text */
+    color: #000000; /* Text color for the h1 text */
+    font-weight: 50px;
+}
+    
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff9933;
+}
+
+
+
+
+/* Feature cards */
+
+#features {
+    
+    background-color:#a884cb;
+}
+.feature-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px; /* Adjust as needed */
+    margin: 40px; /* Adjust as needed */
+    display: inline-block;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Hide overflowing content */
+    transition: all 0.3s ease; /* Add a smooth transition for all properties */
+}
+
+.feature-card img {
+    width: 300%; /* Use 100% width to fill the container */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 1; /* Initially show the image */
+    transform: scale(1); /* Initial scale to make it normal size */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Add transitions for opacity and scale */
+}
+
+.feature-card h3,
+.feature-card p {
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.3s ease; /* Add a smooth transition for opacity */
+}
+
+/* Hover effect to minimize image size and show the text on feature card hover */
+.feature-card:hover img {
+    transform: scale(0.8); /* Minimize the image on hover */
+}
+
+.feature-card:hover h3,
+.feature-card:hover p {
+    opacity: 1; /* Show the text on hover */
+}
+
+/* Features section */
+.features {
+    background-color: #1c1b1b;
+    padding: 80px; /* Adjust as needed */
+    text-align: center;
+    position: relative;
+}
+
+.features h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+/* Feature cards */
+.feature-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px; /* Adjust as needed */
+    margin: 40px; /* Adjust as needed */
+    display: inline-block;
+    width: 220px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-card img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Testimonials section */
+.testimonials {
+    background-color: #e3bb5f;
+    padding: 200px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.testimonial-card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 40px; /* Adjust as needed */
+    margin: 40px;
+    display: inline-block;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonial-card cite {
+    font-weight: bold;
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+/* Contact section */
+/* Add this CSS to center-align h2 and paragraph in the contact form */
+
+/* Contact form container */
+.contact-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Center-align h2 */
+.contact h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center; /* Center-align the h2 text */
+}
+
+/* Center-align paragraph */
+.contact p {
+    font-size: 16px;
+    color: #333; /* Text color for the paragraph */
+    text-align: center; /* Center-align the paragraph text */
+}
+
+/* Form group (each input field and label) */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333; /* Text color for labels */
+}
+
+/* Input and textarea styling */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333; /* Text color for input fields */
+}
+
+/* Textarea resizing */
+textarea {
+    resize: vertical;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff9933;
+}
+
+/* Optional: Add styling for success or error messages */
+.success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
